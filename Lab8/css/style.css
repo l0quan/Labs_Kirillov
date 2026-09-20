@@ -1,0 +1,188 @@
+/* ==========================================================================
+   Mix — промо-страница
+   Макет: mix.psd, 1920×1188, контентная колонка 960 px (x: 480…1440)
+   Шрифты: Crete Round (заголовки), Lato (текст)
+   Цвета:  #060C31 — основной текст, #233FE2 — синяя кнопка,
+           #FFB0B1 — обводка второй кнопки, #FFFFFF — фон
+   ========================================================================== */
+
+:root {
+  --color-text: #060c31;
+  --color-accent: #233fe2;
+  --color-accent-hover: #1b32bb;
+  --color-outline: #ffb0b1;
+  --color-bg: #ffffff;
+
+  --container: 960px;
+  --font-title: "Crete Round", Georgia, "Times New Roman", serif;
+  --font-text: "Lato", "Segoe UI", Arial, sans-serif;
+
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-text);
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Контейнер -------------------------------------------------------------- */
+
+.page {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Шапка ------------------------------------------------------------------ */
+
+.header {
+  padding-top: 52px;
+}
+
+.logo {
+  display: inline-block;
+  font-family: var(--font-title);
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+/* Промо-блок ------------------------------------------------------------- */
+
+.promo__title {
+  max-width: 520px;
+  margin: 70px 0 0;
+  font-family: var(--font-title);
+  font-weight: 400;
+  font-size: 58px;
+  line-height: 64px;
+  letter-spacing: 0.05em;
+}
+
+.promo__text {
+  max-width: 420px;
+  margin: 36px 0 0;
+}
+
+/* Кнопки ----------------------------------------------------------------- */
+
+.promo__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 47px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 152px;
+  height: 50px;
+  padding: 0 28px;
+  border-radius: 25px;
+  border: 1px solid transparent;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.button--primary {
+  background-color: var(--color-accent);
+  color: #ffffff;
+}
+
+.button--primary:hover,
+.button--primary:focus-visible {
+  background-color: var(--color-accent-hover);
+}
+
+.button--outline {
+  min-width: 164px;
+  background-color: transparent;
+  border-color: var(--color-outline);
+  color: var(--color-text);
+}
+
+.button--outline:hover,
+.button--outline:focus-visible {
+  background-color: var(--color-outline);
+}
+
+/* Иллюстрация ------------------------------------------------------------ */
+
+.promo__image {
+  margin: 28px 0 0;
+  margin-left: -29px; /* в макете картинка немного выходит за колонку */
+  padding-bottom: 30px;
+}
+
+.promo__image img {
+  width: 717px;
+}
+
+/* Адаптив --------------------------------------------------------------- */
+
+@media (max-width: 767px) {
+  .header {
+    padding-top: 32px;
+  }
+
+  .promo__title {
+    margin-top: 40px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .promo__text {
+    margin-top: 24px;
+  }
+
+  .promo__buttons {
+    margin-top: 32px;
+    gap: 12px;
+  }
+
+  .promo__image {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo__title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .button,
+  .button--outline {
+    flex: 1 1 100%;
+  }
+}
