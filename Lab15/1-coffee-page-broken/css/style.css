@@ -1,0 +1,213 @@
+@font-face
+{
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face
+{
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face
+{
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+.top_menu
+{
+    text-align: center;
+}
+
+.menu
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu_item
+{
+    list-style: none;
+}
+
+.menu_link
+{
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 80px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #282b30;
+    display: inline-block;
+}
+
+.top_block_wrapper
+{
+    background: url('../images/top_block.jpg') center center;
+    background-size: cover;
+    padding: 175px 0;
+    text-align: center;
+}
+
+.top_block_title_wrapper
+{
+    background: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    display: inline-block;
+}
+
+.top_block_title
+{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.content_wrapper
+{
+    padding: 60px 20px;
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.content_title
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #282b30;
+    margin: 0 0 40px;
+}
+
+.text
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 500;
+    margin: 0 0 25px;
+    color: #282b30;
+    max-width: 560px;
+}
+
+.content_list
+{
+    margin: 0 0 40px;
+    padding: 0 0 0 20px;
+}
+
+.content_list_item
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    color: #282b30;
+    max-width: 380px;
+}
+
+/* -------- Кнопки -------- */
+
+.order_button
+{
+    background: #0fa8ea;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 52px;
+    border-radius: 26px;
+    padding: 0 50px;
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order_button:hover
+{
+    background: #0b7fb1;
+    box-shadow: 0 10px 24px rgba(15, 168, 234, 0.45);
+}
+
+/* Прозрачная с синей рамкой. В HTML: class="order_button order_button_transparent" */
+.order_button_transparent
+{
+    background: transparent;
+    color: #0fa8ea;
+    border: 2px solid #0fa8ea;
+    line-height: 48px; /* 48 + 2*2 = 52 — та же высота, что у сплошной */
+}
+
+.order_button_transparent:hover
+{
+    background: #0fa8ea;
+    color: #fff;
+    box-shadow: 0 10px 24px rgba(15, 168, 234, 0.45);
+}
+
+/* -------- /Кнопки -------- */
+
+.order_title
+{
+    max-width: 340px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #2b2b2b;
+    margin: 0 0 26px;
+}
+
+.order_wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.order_text_wrapper
+{
+    width: 430px;
+}
+
+.order_picture_wrapper
+{
+    flex-shrink: 0;
+}
+
+.order_picture_wrapper img
+{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.bottom_menu
+{
+    background: #e8e6eb;
+    text-align: center;
+}
