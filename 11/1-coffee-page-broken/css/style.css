@@ -1,0 +1,176 @@
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 80px;
+}
+
+.top_menu {
+    text-align: center;
+    background: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_item {
+    list-style: none;
+}
+
+.menu_link {
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 60px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #282b30;
+    display: inline-block;
+}
+
+.top_block_wrapper {
+    background: url('../images/top_block.jpg') center center;
+    background-size: cover;
+    padding: 175px 0;
+    text-align: center;
+}
+
+.top_block_title_wrapper {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    display: inline-block;
+}
+
+.top_block_title {
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.content_wrapper {
+    padding: 60px 20px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.content_title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #282b30;
+    margin: 0 0 40px;
+}
+
+.text {
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 500;
+    margin: 0 0 25px;
+    color: #282b30;
+    max-width: 560px;
+}
+
+.content_list {
+    margin: 0 0 40px;
+    padding: 0 0 0 20px;
+    list-style: none;
+}
+
+.content_list_item {
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    color: #282b30;
+    max-width: 380px;
+    padding-left: 30px;
+    background: url('../images/coffee_bean.png') no-repeat left 5px;
+}
+
+.order_button {
+    background: #0fa8ea;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 52px;
+    font-weight: 700;
+    border-radius: 26px;
+    padding: 0 50px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.order_button:hover {
+    background: #0c8ec7;
+}
+
+.order_title {
+    max-width: 340px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #2b2b2b;
+    margin: 0 0 26px;
+}
+
+.order_text_wrapper {
+    display: inline-block;
+    width: 430px;
+    margin-right: 110px;
+    vertical-align: middle;
+}
+
+.order_picture_wrapper {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bottom_menu {
+    background: #e8e6eb;
+    text-align: center;
+    padding: 10px 0;
+}
