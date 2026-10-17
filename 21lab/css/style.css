@@ -1,0 +1,240 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+.clear
+{
+    clear: both;
+}
+
+.content_wrapper
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Top menu */
+.topmenu
+{
+    padding: 15px 0;
+}
+
+.top_logo
+{
+    padding: 0 37px;
+    line-height: 24px;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    
+    font: 700 24px/1 'Roboto', sans-serif;
+    color: #99746a;
+}
+
+.top_logo .secondary_color
+{
+    color: #e56a77;
+}
+
+
+/* Top block */
+.top_block
+{
+    min-height: 348px;
+    background: url('../images/top-block.jpg') no-repeat top center;
+    background-size: cover;
+    box-sizing: border-box;
+    padding: 70px 55px;
+}
+
+.promo_title
+{
+    font: 300 48px/1.125 'Open Sans', sans-serif;
+    color: #fff;
+    margin: 0 0 46px;
+}
+
+.promo_button
+{
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 0 38px;
+    font: 300 18px/48px 'Open Sans', sans-serif;
+    color: #fff;
+    background: none;
+    cursor: pointer;
+    
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.promo_button:hover
+{
+    color: #333;
+    background-color: #fff;
+}
+
+
+/* Main wrapper */
+.main_wrapper
+{
+    padding: 40px 0 20px;
+    overflow-x: hidden;
+}
+
+.moovies_title
+{
+    font: 300 48px/54px 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0 0 38px;
+}
+
+.moovies_wrapper
+{
+    margin: 0 -15px;
+}
+
+.moovie_poster
+{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.moovie_title
+{
+    font: 400 30px/1.325 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0 0 20px;
+}
+
+.moovie_description
+{
+    font: 400 15px/1.75 'Open Sans', sans-serif;
+    color: #333;
+}
+
+/* «Резиновая» колонка: ровно 3 в ряд на любой ширине */
+.moovie_container
+{
+    box-sizing: border-box;
+    padding: 0 15px;
+    float: left;
+    width: 33.3333%;
+    margin-bottom: 40px;
+}
+
+
+/* Footer */
+.footer
+{
+    background: #eee;
+    padding: 20px 20px;
+}
+
+.footer_container
+{
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.footer_container .copyright
+{
+    text-align: center;
+    font: 15px/1.5 'Open Sans', sans-serif;
+    color: #333;
+}
+
+.footer_link
+{
+    color: #000;
+    text-decoration: underline;
+}
+
+.footer_link:hover
+{
+    text-decoration: none;
+}
+
+/* Стили для маленьких мониторов */
+@media screen and (max-width: 1200px)
+{
+    .topmenu,
+    .main_wrapper
+    {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+
+/* Стили для планшета */
+@media screen and (max-width: 768px)
+{
+    .top_block
+    {
+        padding: 50px 30px;
+        min-height: 280px;
+    }
+
+    .promo_title
+    {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .moovies_title
+    {
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 30px;
+    }
+
+    /* 2 блока в ряд */
+    .moovie_container
+    {
+        width: 50%;
+    }
+
+    .moovie_title
+    {
+        font-size: 24px;
+    }
+}
+
+
+/* Стили для телефона */
+@media screen and (max-width: 480px)
+{
+    .top_block
+    {
+        padding: 40px 20px;
+    }
+
+    .promo_title
+    {
+        font-size: 28px;
+    }
+
+    .promo_button
+    {
+        padding: 0 28px;
+        font-size: 16px;
+    }
+
+    .moovies_title
+    {
+        font-size: 28px;
+    }
+
+    /* 1 блок в ряд */
+    .moovie_container
+    {
+        float: none;
+        width: 100%;
+    }
+}
