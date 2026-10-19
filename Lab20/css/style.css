@@ -1,0 +1,441 @@
+@font-face
+{
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Medium.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face
+{
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face
+{
+  font-family: 'Raleway';
+  src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+/* Курсор-«палец» для всех элементов, на которые можно нажать */
+a,
+button,
+select,
+label,
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"],
+input[type="button"],
+[role="button"]
+{
+    cursor: pointer;
+}
+
+button:disabled,
+input:disabled,
+select:disabled
+{
+    cursor: default;
+}
+
+.top_menu
+{
+    text-align: center;
+}
+
+.menu_item
+{
+    list-style: none;
+	display: inline-block;
+}
+
+.menu_link
+{
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 80px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #282b30;
+    display: inline-block;
+}
+
+.top_block_wrapper
+{
+    background: url('../images/top_block.jpg') center center;
+    background-size: cover;
+    padding: 175px 0;
+    text-align: center;
+}
+
+.top_block_title_wrapper
+{
+    background: rgba(0, 0, 0, 0.75);
+    padding: 20px;
+    display: inline-block;
+}
+
+.top_block_title
+{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.content_wrapper
+{
+    padding: 60px 20px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.content_title
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #282b30;
+    margin: 0 0 40px;
+}
+
+.text
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 500;
+    margin: 0 0 25px;
+    color: #282b30;
+    max-width: 560px;
+}
+
+.content_list
+{
+    margin: 0 0 40px;
+    padding: 0 0 0 20px;
+}
+
+.content_list_item
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    line-height: 27px;
+    font-weight: 500;
+    margin: 0 0 10px;
+    color: #282b30;
+    max-width: 380px;
+}
+
+.order_button
+{
+    background: #0fa8ea;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 52px;
+    font-weight: 700;
+    border-radius: 26px;
+    padding: 0 50px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.button_light
+{
+    background: none;
+    color: #0fa8ea;
+	border: 1px solid #0fa8ea;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 52px;
+    font-weight: 700;
+    border-radius: 26px;
+    padding: 0 50px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.order_title
+{
+    max-width: 340px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 26px;
+    line-height: 32px;
+    font-weight: 500;
+    color: #2b2b2b;
+    margin: 0 0 26px;
+}
+
+.order_text_wrapper
+{
+    display: inline-block;
+    width: 430px;
+    margin-right: 110px;
+	vertical-align: middle;
+}
+
+.order_picture_wrapper
+{
+    display: inline-block;
+	vertical-align: middle;
+}
+
+.subscription_wrapper
+{
+    background: #e8e6eb;
+    margin-top: 95px;
+    padding: 60px 20px 69px;
+}
+
+.subscription_form
+{
+    position: relative;
+    width: 541px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.subscription_title
+{
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    line-height: 46px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: #282b30;
+    margin: 0 0 27px;
+}
+
+.subscription_text
+{
+    font-family: 'Raleway', sans-serif;
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #2b2b2b;
+    margin: 0 0 32px 2px;
+}
+
+.subscription_field
+{
+    position: relative;
+    margin: 0 0 17px;
+}
+
+.subscription_input,
+.subscription_select
+{
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 62px;
+    background-color: #fff;
+    border: 1px solid #0fa8ea;
+    border-radius: 31px;
+    padding: 0 30px 0 29px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.005em;
+    color: #2b2b2b;
+    transition: box-shadow 0.2s;
+}
+
+.subscription_input::placeholder
+{
+    color: #777;
+    opacity: 1;
+}
+
+.subscription_select
+{
+    background-image: url('../images/down-arrow.png');
+    background-repeat: no-repeat;
+    background-position: right 27px center;
+    padding-right: 75px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.subscription_select::-ms-expand
+{
+    display: none;
+}
+
+.subscription_input:focus,
+.subscription_select:focus
+{
+    box-shadow: 0 0 0 3px rgba(15, 168, 234, 0.25);
+}
+
+.subscription_field.is_error .subscription_input
+{
+    border-color: #e5484d;
+}
+
+.subscription_field.is_error .subscription_input:focus
+{
+    box-shadow: 0 0 0 3px rgba(229, 72, 77, 0.2);
+}
+
+.subscription_message
+{
+    position: absolute;
+    left: 30px;
+    top: 100%;
+    margin-top: 1px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #e5484d;
+}
+
+.subscription_options
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin: 33px 0 31px 31px;
+}
+
+.subscription_options .subscription_message
+{
+    left: -1px;
+    margin-top: 4px;
+}
+
+.subscription_checkbox
+{
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    margin-right: 44px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17.7px;
+    line-height: 20px;
+    font-weight: 500;
+    letter-spacing: 0.005em;
+    color: #2b2b2b;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.subscription_checkbox_input
+{
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    opacity: 0;
+}
+
+.subscription_checkbox_box
+{
+    position: relative;
+    flex: none;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    border-radius: 3px;
+    background: url('../images/checkbox-clean.png') no-repeat;
+}
+
+.subscription_checkbox_box::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: url('../images/checkbox-checked.png') no-repeat;
+    opacity: 0;
+    transition: opacity 0.15s;
+}
+
+.subscription_checkbox_input:checked + .subscription_checkbox_box::after
+{
+    opacity: 1;
+}
+
+.subscription_checkbox_input:focus-visible + .subscription_checkbox_box
+{
+    box-shadow: 0 0 0 3px rgba(15, 168, 234, 0.35);
+}
+
+.subscription_button
+{
+    display: block;
+    width: 100%;
+    height: 62px;
+    background: #0fa8ea;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 31px;
+    transition: background 0.2s;
+}
+
+.subscription_button:hover
+{
+    background: #0b93cd;
+}
+
+.subscription_button:focus-visible
+{
+    box-shadow: 0 0 0 3px rgba(15, 168, 234, 0.35);
+}
+
+.subscription_button:disabled
+{
+    opacity: 0.6;
+}
+
+.subscription_status
+{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    margin-top: 14px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 600;
+    color: #1a8a4a;
+}
+
+.subscription_status.is_error
+{
+    color: #e5484d;
+}
+
+.bottom_menu
+{
+    background: #fff;
+    text-align: center;
+}
