@@ -1,0 +1,14 @@
+Блок «High-end conversion to HTML5» в HTML выглядит так:
+html
+<div class="title_text_default col-md-15 col-sm-16 col-xs-16 ...">
+  <div class="title_text_default_wrapper">
+    <h2 class="text-left title_text_default__title">High-end conversion to HTML5</h2>
+    <p class="text-left indent_large title_text_default__paragraph">...</p>
+  </div>
+</div>
+В предоставленном CSS-файле напрямую стилизуются только элементы внутри .platform_content_wrapper (родитель блока): заголовок h2 и параграф p.indent_large. Классы title_text_default, title_text_default__title и т.п. в этом файле отсутствуют — их стили, скорее всего, лежат в main.css или других общих файлах.
+Оба изменения происходят в одном и том же медиа-запросе @media screen and (max-width: 1023px). Других переопределений для этих элементов в файле нет.
+Итог
+Стиль блока меняется 2 раза — при ширине экрана 1023px и меньше:
+Уменьшается размер шрифта заголовка.
+Уменьшается нижний отступ параграфа.
