@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mix — The world’s first learning solution for everyone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a class="logo" href="#">Mix</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+        <span class="menu-toggle__bar"></span>
+      </button>
+    </div>
+
+    <nav class="menu" id="menu" aria-label="Main">
+      <ul class="menu__list">
+        <li><a class="menu__link" href="#">Product</a></li>
+        <li><a class="menu__link" href="#">Pricing</a></li>
+        <li><a class="menu__link" href="#">About Us</a></li>
+        <li><a class="menu__link" href="#">Blog</a></li>
+        <li><a class="menu__link" href="#">Help</a></li>
+        <li><a class="menu__link" href="#">Log In</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="page">
+
+  <main class="promo">
+      <h1 class="promo__title">The world’s first<br>learning solution<br>for everyone</h1>
+
+      <p class="promo__text">
+        It is a long established fact that a reader will be distracted
+        by the readable content of a page when looking at its
+        layout. The point of using Lorem Ipsum.
+      </p>
+
+      <div class="promo__buttons">
+        <a class="button button--primary" href="#">Get started</a>
+        <a class="button button--outline" href="#">Create account</a>
+      </div>
+
+      <div class="promo__image">
+        <img src="img/clipart.png" alt="People talking on a video call" width="717" height="569">
+      </div>
+    </main>
+
+  </div>
+
+
+  <script>
+    (function () {
+      var toggle = document.querySelector('.menu-toggle');
+      var menu = document.getElementById('menu');
+      var desktop = window.matchMedia('(min-width: 768px)');
+
+      function setOpen(open) {
+        menu.classList.toggle('is-open', open);
+        toggle.classList.toggle('is-open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+      }
+
+      toggle.addEventListener('click', function () {
+        setOpen(!menu.classList.contains('is-open'));
+      });
+
+      menu.addEventListener('click', function (e) {
+        if (e.target.closest('a')) setOpen(false);
+      });
+
+      document.addEventListener('click', function (e) {
+        if (!e.target.closest('.header')) setOpen(false);
+      });
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && menu.classList.contains('is-open')) {
+          setOpen(false);
+          toggle.focus();
+        }
+      });
+
+      desktop.addEventListener('change', function (e) {
+        if (e.matches) setOpen(false);
+      });
+    })();
+  </script>
+
+</body>
+</html>
