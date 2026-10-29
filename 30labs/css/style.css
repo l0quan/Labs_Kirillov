@@ -1,0 +1,381 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.clear
+{
+    clear: both;
+}
+
+/* Menu */
+.menu
+{
+    text-align: center;
+}
+
+.menu_item
+{
+    display: inline-block;
+    list-style: none;
+    padding: 0 12px;
+    height: 95px;
+}
+
+.menu_link
+{
+    line-height: 95px;
+    font: 300 14px/95px 'Open Sans', sans-serif;
+    color: #8a8a8a;
+    text-decoration: none;
+}
+
+
+/* Top block */
+.promo_wrapper
+{
+    background: url('../images/promo.jpg') center center;
+    background-size: cover;
+    padding: 110px 20px;
+}
+
+.promo_wrapper.aquapark
+{
+    background: url('../images/promo-aquapark.jpg') center center;
+}
+
+.promo_wrapper.club
+{
+    background: url('../images/promo-club.jpg') center center;
+}
+
+.promo_container
+{
+    margin: 0 auto;
+    max-width: 1040px;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.promo_logo
+{
+    margin: 0 auto 20px;
+}
+
+.promo_title
+{
+    color: #fff;
+    font: 300 48px/58px 'Open Sans', sans-serif;
+    margin: 0 0 20px;
+}
+
+.promo_subtitle
+{
+    color: #fff;
+    font: 300 24px/42px 'Open Sans', sans-serif;
+    margin: 0 auto 70px;
+    max-width: 940px;
+}
+
+.success_button
+{
+    display: inline-block;
+    background: #16a085;
+    border-radius: 34px;
+    width: 230px;
+    height: 72px;
+    margin-right: 25px;
+    font: 400 16px/72px 'Open Sans', sans-serif;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.additional_button
+{
+    display: inline-block;
+    background: none;
+    border-radius: 34px;
+    width: 230px;
+    height: 72px;
+    font: 400 16px/72px 'Open Sans', sans-serif;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
+/* Content */
+.content_wrapper
+{
+    max-width: 1040px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.description
+{
+    padding: 62px 0 46px;
+}
+
+.article_title,
+.feedback_title
+{
+    font: 300 36px/42px 'Open Sans', sans-serif;
+    color: #363636;
+    margin: 0 0 40px;
+    text-transform: uppercase;
+}
+
+.article_text
+{
+    font: 300 16px/28px 'Open Sans', sans-serif;
+    color: #363636;
+    margin: 0 0 30px;
+    max-width: 650px;
+}
+
+.article_menu
+{
+    padding-left: 0;
+    margin: 40px 0;
+    list-style: none;
+}
+
+.article_menu_item
+{
+    font: 300 16px/28px 'Open Sans', sans-serif;
+    color: #363636;
+    margin: 0 0 26px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.article_menu_item:before
+{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 13px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background-color: #969696;
+}
+
+
+/* Feature */
+.feature_wrapper
+{
+    padding: 40px 20px 90px;
+}
+
+.feature_description
+{
+    float: left;
+    width: 460px;
+    margin-top: 195px;
+    margin-right: 92px;
+}
+
+.feature_image_wrapper
+{
+    float: left;
+}
+
+.feature_title
+{
+    font: 300 36px/42px 'Open Sans', sans-serif;
+    color: #363636;
+    margin: 0 0 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 335px;
+}
+
+.feature_subtitle
+{
+    font: 300 16px/28px 'Open Sans', sans-serif;
+    color: #363636;
+    margin: 0 0 40px;
+}
+
+.feature_title_icons
+{
+    display: inline-block;
+}
+
+.feature_icon
+{
+    margin-left: 15px;
+}
+
+
+/* Feedback */
+.feedback_wrapper
+{
+    max-width: 860px;
+    padding: 75px 20px;
+    text-align: center;
+}
+
+.feedback_title
+{
+    text-align: center;
+    margin-bottom: 56px;
+}
+
+.feedback_container
+{
+    width: 240px;
+    float: left;
+    margin-right: 70px;
+    text-align: center;
+}
+
+.feedback_container.last
+{
+    margin-right: 0;
+}
+
+.feedbacks
+{
+    margin-bottom: 40px;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, margin-bottom 0.5s ease-in-out;
+    max-height: 2000px; 
+    opacity: 1;
+    overflow: hidden;
+}
+
+.feedbacks.hidden
+{
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    pointer-events: none; 
+}
+
+.feedback_photo
+{
+    max-width: 100%;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.person_name
+{
+    font: 300 24px/36px 'Open Sans', sans-serif;
+    color: #363636;
+    margin: 0 0 4px;
+    text-transform: uppercase;
+}
+
+.feedback_text
+{
+    font: italic 14px/23px 'Georgia', sans-serif;
+    color: #363636;
+    margin: 0;
+}
+
+
+/* Separation */
+.separation_wrapper
+{
+    background: #2c3e50;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.separation_wrapper .promo_title
+{
+    text-transform: uppercase;
+    font: 300 36px/42px 'Open Sans', sans-serif;
+    margin: 0 0 12px;
+}
+
+.separation_wrapper .promo_subtitle
+{
+    font: 300 18px/30px 'Open Sans', sans-serif;
+    margin: 0 auto 30px;
+}
+
+.separation_wrapper .success_button
+{
+    margin: 0;
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-overlay.active {
+    display: flex;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.popup-content h2 {
+    font: 300 24px/32px 'Open Sans', sans-serif;
+    color: #363636;
+    margin-bottom: 20px;
+}
+
+.popup-content input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font: 300 16px/24px 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.popup-content button {
+    background: #16a085; /* Фирменный цвет кнопок с вашего сайта */
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 34px;
+    cursor: pointer;
+    font: 400 16px/24px 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+.popup-content button:hover {
+    background: #12876f;
+}
+
+.success_button.hidden-btn {
+    opacity: 0;
+    transform: translateY(15px);
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
